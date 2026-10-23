@@ -8,3 +8,5 @@ Cleaning: For each dataset, we fix the data types, harmonize labels and units, r
 Merging. The cleaned datasets are combined into a single final table using common keys.
 
 Modeling: In the first approach, we test several combinations of columns and keep the most relevant one. In the second, we set the columns in advance. We then compare the results of the two approaches.
+
+Our git is in : https://github.com/DJOUHRIELYES/Projet-DALAS---Elyes---Adib
