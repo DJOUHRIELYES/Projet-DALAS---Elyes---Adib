@@ -1,9 +1,18 @@
-Problématique. Le prix d’une voiture d’occasion dépend de nombreux facteurs : âge, kilométrage, marque, motorisation, puissance, équipements. Notre question de recherche est la suivante : quelles caractéristiques d’un véhicule expliquent le mieux son prix, et dans quelle mesure peut-on le prédire ? Nous voulons à la fois prédire le prix avec la plus faible erreur possible, et identifier les variables qui l’influencent réellement.
+# Used Car Price Prediction
 
-Données. Aucune base ne contient toutes les informations nécessaires. Nous construisons donc notre propre jeu de données à partir de quatre sources : le jeu Automobile du UCI Machine Learning Repository (archive.ics.uci.edu/dataset/10/automobile), et trois jeux de voitures d’occasion trouvés sur Kaggle [préciser les noms]. Dans chaque base, nous ne gardons que les colonnes utiles pour expliquer le prix.
+**Authors:** Elyes DJOUHRI and Adib KAGHOUCHE (Wednesday morning group)
 
-Nettoyage. Pour chaque base, nous corrigeons les types, harmonisons les libellés et les unités, supprimons les doublons, traitons les valeurs aberrantes et les valeurs manquantes, en documentant chaque choix.
+**Research question:** The price of a used car depends on many factors: age, mileage, brand, engine type, power, equipment. Which characteristics of a vehicle best explain its price, and to what extent can it be predicted? We want both to predict the price with the lowest possible error and to identify the variables that truly influence it.
 
-Fusion. Les bases nettoyées sont regroupées en une seule table finale grâce à des clés communes (marque, modèle, année, carburant).
+**Data (done):** No single dataset contains all the necessary information, so we build our own from four real datasets found on Kaggle:
+1. [Used Car Price Prediction Dataset](https://www.kaggle.com/datasets/taeefnajib/used-car-price-prediction-dataset) (`used_cars.csv`, 4,009 rows)
+2. [Car Price Prediction Dataset](https://www.kaggle.com/datasets/sukhmandeepsinghbrar/car-price-prediction-dataset) (`car_price_dataset.csv`, 10,000 rows)
+3. [Honda Used Car Selling](https://www.kaggle.com/code/themrityunjaypathak/car-price-prediction) (`honda_car_selling.csv`, 999 rows)
+4. [90,000+ Cars Data From 1970 To 2024](https://www.kaggle.com/datasets/meruvulikith/90000-cars-data-from-1970-to-2024) (`CarsData.csv`, 97,712 rows)
 
-Modélisation. Nous entraînons d’abord une régression linéaire comme référence, puis des modèles plus flexibles (forêt aléatoire, gradient boosting). Nous suivons deux approches. Dans la première, nous testons plusieurs combinaisons de colonnes et retenons la plus pertinente. Dans la seconde, nous fixons les colonnes à l’avance. Nous comparons ensuite les résultats des deux approches.
+**Next steps (not done yet):**
+- **Cleaning:** for each dataset, keep the useful columns, fix data types, harmonize labels and units, remove duplicates, handle outliers and missing values, and document each choice.
+- **Merging:** combine the cleaned datasets into a single final table using common keys.
+- **Modeling:** in the first approach, test several combinations of columns and keep the most relevant one; in the second, set the columns in advance. Then compare the two approaches.
+
+Our git: https://github.com/DJOUHRIELYES/Projet-DALAS---Elyes---Adib
